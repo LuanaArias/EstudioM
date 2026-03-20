@@ -1,0 +1,122 @@
+.section-opiniones {
+  text-align: center;
+  background-color: var(--accent); 
+  padding: 80px 2rem;
+  transition: background 0.3s ease;
+}
+
+.section-opiniones h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 50px;
+}
+
+/* Contenedor Grid */
+.opiniones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* cards */
+.opiniones-card {
+  background: var(--bg); 
+  padding: 40px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(90, 62, 43, 0.1);
+  border: 1px solid rgba(163, 143, 123, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.opiniones-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(90, 62, 43, 0.15);
+}
+
+.opinion-texto {
+  color: var(--text);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.opiniones-card h3 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.cliente-ocupacion {
+  color: var(--primary); 
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+[data-theme="dark"] .opiniones-card {
+  background: var(--accent);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .opiniones-card h3{
+    color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .section-opiniones h2 {
+    font-size: 2.2rem; 
+  }
+  
+  .opiniones-grid {
+    padding: 0 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+    .section-opiniones {
+        padding: 60px 1.5rem; 
+    }
+    .opiniones-card h3 {
+        margin-bottom: 1px;
+    }
+    .section-opiniones h2 {
+        font-size: 1.8rem; 
+        margin-bottom: 30px;
+    }
+
+    .opiniones-card {
+        padding: 25px; 
+        margin: 0; 
+    }
+
+    .opinion-texto {
+        font-size: 1rem; 
+    }
+
+    .opiniones-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .cliente-ocupacion{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+  .section-opiniones h2 {
+    font-size: 1.5rem;
+  }
+  .opinion-texto {
+    font-size: 0.8rem; 
+  }
+  .opiniones-grid {
+    gap: 15px; /* Tarjetas más juntas */
+  }
+}

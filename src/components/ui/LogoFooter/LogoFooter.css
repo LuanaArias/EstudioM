@@ -1,0 +1,29 @@
+.logo-footer-container {
+    width: auto;
+}
+
+.logo-footer {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1400px) {
+    .logo-footer-container {
+        width: auto;
+    }
+    .logo-footer {
+        max-width: 60px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-footer-container {
+        width: auto;
+    }
+
+    .logo-footer {
+        max-width: 40px;
+    }
+}

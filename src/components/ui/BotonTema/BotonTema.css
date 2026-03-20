@@ -1,0 +1,17 @@
+.alternar-tema {
+  position: fixed;
+  top: 110px;
+  right: 20px;
+  z-index: 9999;
+  background: var(--secondary);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.alternar-tema:hover {
+  transform: scale(1.1);
+}

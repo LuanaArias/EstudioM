@@ -1,0 +1,180 @@
+.section-formulario-contacto {
+  background-color: var(--bg);
+  padding: 80px 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.formulario-wrapper {
+  max-width: 700px; /* Más angosto para que nombre y descripción luzcan mejor */
+  width: 100%;
+  text-align: left;
+}
+
+.formulario-header h2 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  color: var(--secondary); /* Color madera oscuro */
+  margin-bottom: 10px;
+}
+
+.formulario-header p {
+  color: var(--text);
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.form-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group label {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--primary); /* Beige madera */
+  font-weight: bold;
+}
+
+.input-group input, 
+.input-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent); 
+  padding: 15px 0;
+  font-size: 1rem;
+  color: var(--text);
+  transition: border-color 0.3s;
+}
+
+.input-group textarea {
+  border: 1px solid var(--accent);
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.submit-wsp {
+  width: 100%;
+  background-color: var(--secondary);
+  color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.submit-wsp:hover {
+  background-color: #25D366; /* Verde WhatsApp al pasar el mouse */
+  transform: translateY(-3px);
+}
+
+/* Modo Oscuro adaptado */
+[data-theme="dark"] .formulario-wrapper h2 {
+  color: var(--primary);
+}
+
+[data-theme="dark"] .input-group input, 
+[data-theme="dark"] .input-group textarea {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+    .section-formulario-contacto {
+        padding: 60px 2rem;
+    }
+
+    .formulario-wrapper {
+        max-width: 600px;
+    }
+
+    .formulario-header h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/* --- MÓVILES (Menos de 768px) --- */
+@media (max-width: 768px) {
+    .section-formulario-contacto {
+        padding: 40px 1.5rem;
+    }
+
+    .formulario-header h2 {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+
+    .formulario-header p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .form-simple {
+        gap: 25px; /* Reducimos el espacio entre campos */
+    }
+
+    .input-group label {
+        font-size: 0.75rem; /* Etiquetas un poco más pequeñas */
+    }
+
+    .input-group input, 
+    .input-group textarea {
+        font-size: 1.1rem; /* Aumentamos ligeramente para evitar el zoom automático en iOS */
+    }
+
+    .submit-wsp {
+        padding: 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* --- MÓVILES PEQUEÑOS (Menos de 480px) --- */
+@media (max-width: 480px) {
+    .section-formulario-contacto {
+        padding: 30px 1rem;
+    }
+
+    .formulario-header h2 {
+        font-size: 2rem;
+    }
+
+    .formulario-header p {
+        font-size: 1rem;
+    }
+
+    .input-group input, 
+    .input-group textarea {
+        padding: 12px 0;
+        font-size: 0.8rem;
+    }
+
+    .input-group textarea {
+        padding: 12px; /* Mantener padding interno en el área de texto */
+    }
+    .submit-wsp {
+        width: 60%;   
+        padding: 10px;
+        border-radius: 4px;
+        font-weight: 100;
+        gap: 7px;
+    }
+}

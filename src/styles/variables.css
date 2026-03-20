@@ -1,0 +1,15 @@
+:root {
+  --bg: #F5F1EC;        
+  --text: #2C2C2C;     
+  --primary: #A38F7B;   
+  --secondary: #5A3E2B;
+  --accent: #E3DBD2;  
+}
+
+[data-theme="dark"] {
+  --bg: #1C1A18;        
+  --text: #F5F1EC;      
+  --primary: #6F4E37;   
+  --secondary: #A38F7B; 
+  --accent: #8C7B6A;    
+}

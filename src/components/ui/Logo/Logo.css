@@ -1,0 +1,29 @@
+.logo-principal-container {
+    width: auto;
+}
+
+.imagen-logo {
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1400px) {
+    .logo-principal-container {
+        width: auto;
+    }
+    .imagen-logo {
+        max-width: 60px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-principal-container {
+        width: auto;
+    }
+
+    .imagen-logo {
+        max-width: 40px;
+    }
+}
