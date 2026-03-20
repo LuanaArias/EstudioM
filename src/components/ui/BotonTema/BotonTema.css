@@ -1,17 +1,72 @@
-.alternar-tema {
-  position: fixed;
-  top: 110px;
-  right: 20px;
-  z-index: 9999;
-  background: var(--secondary);
-  border: none;
-  padding: 10px 14px;
-  border-radius: 50px;
+.alternar-tema-switch {
+  width: 75px;
+  height: 38px;
+  background-color: var(--accent);
+  border: 1px solid rgba(163, 143, 123, 0.2); 
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s ease;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  padding: 0 4px; 
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); 
+  outline: none;
 }
 
-.alternar-tema:hover {
-  transform: scale(1.1);
+.alternar-tema-switch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(90, 62, 43, 0.1); 
+}
+
+
+.canica-switch {
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 4px;
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.icono-wsp {
+  font-size: 1.1rem;
+  color: var(--primary); 
+  transition: color 0.4s;
+}
+
+.alternar-tema-switch.activado {
+  background-color: var(--accent); 
+  border-color: var(--primary); 
+}
+
+.alternar-tema-switch.activado .canica-switch {
+  transform: translateX(37px); 
+  background-color: var(--primary);
+}
+
+.alternar-tema-switch.activado .icono-wsp {
+  color: #FFD700; 
+}
+
+
+@media (max-width: 768px) {
+  .alternar-tema-switch {
+    width: 65px;
+    height: 34px;
+  }
+  .canica-switch {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .alternar-tema-switch.activado .canica-switch {
+    transform: translateX(31px); 
+  }
 }

@@ -19,8 +19,7 @@ function App() {
 
   return (
     <div className="app">
-      <Header />
-      <BotonTema tema={theme} alternar={toggleTheme} />
+      <Header tema={theme} alternar={toggleTheme}/>
 
       <main>
         <Routes>

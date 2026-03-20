@@ -69,6 +69,10 @@
     color: var(--primary);
 }
 
+[data-theme="dark"] .section-opiniones {
+  background: var(--accent);
+}
+
 @media (max-width: 1024px) {
   .section-opiniones h2 {
     font-size: 2.2rem; 

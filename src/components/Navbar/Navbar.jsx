@@ -2,6 +2,7 @@ import "./Navbar.css";
 import { navbarRoutes } from "../../constants/navbar.jsx";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import BotonTema from "../ui/BotonTema/BotonTema.jsx";
 
 export function Navbar() {
     const [open, setOpen] = useState(false);
