@@ -1,0 +1,142 @@
+.sobre-mi {
+  padding: 100px 2rem;
+  background-color: var(--bg);
+  transition: background 0.4s ease;
+  overflow: hidden;
+}
+
+.sobre-mi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.sobre-mi-image {
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(20%); 
+}
+
+.decor-box {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--primary);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sobre-mi-content h2 {
+  font-size: 3rem;
+  color: var(--secondary);
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin-bottom: 30px;
+}
+
+.sobre-mi-content p {
+  color: var(--text);
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* Stats */
+.sobre-mi-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-family: serif;
+  color: var(--secondary);
+}
+
+.stat-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+/* --- MODO OSCURO --- */
+[data-theme="dark"] .sobre-mi-content h2,
+[data-theme="dark"] .stat-number {
+  color: var(--primary);
+}
+
+[data-theme="dark"] .decor-box {
+  border-color: var(--secondary);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .sobre-mi-container {
+    gap: 40px;
+  }
+  .sobre-mi-content h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-mi {
+    padding: 60px 1.5rem;
+  }
+  .sobre-mi-container {
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    text-align: center;
+  }
+  .image-wrapper img {
+    height: 400px;
+  }
+  .divider {
+    margin: 0 auto 30px;
+  }
+  .sobre-mi-stats {
+    justify-content: center;
+  }
+  .decor-box {
+    display: none; /* Quitamos el adorno en móvil para limpiar el diseño */
+  }
+}

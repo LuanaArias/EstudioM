@@ -1,0 +1,147 @@
+.proyectos-section {
+  padding: 100px 2rem;
+  background-color: var(--bg);
+  transition: background 0.4s ease;
+}
+
+.proyectos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.proyectos-header h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: var(--secondary);
+  margin: 10px 0;
+}
+
+.proyectos-header p {
+  color: var(--text);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- GRID --- */
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* --- CARD --- */
+.proyecto-card {
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  border-radius: 4px;
+}
+
+.proyecto-image-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.proyecto-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* --- OVERLAY --- */
+.proyecto-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(90, 62, 43, 0.9) 0%, rgba(0,0,0,0) 70%);
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.proyecto-info {
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+  color: white;
+}
+
+.proyecto-cat {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primary); /* El madera resalta sobre el oscuro */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.proyecto-info h3 {
+  font-size: 1.8rem;
+  font-family: serif;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.btn-ver-mas {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn-ver-mas:hover {
+  background: white;
+  color: var(--secondary);
+}
+
+/* --- HOVER EFFECTS --- */
+.proyecto-card:hover .proyecto-image-container img {
+  transform: scale(1.1);
+}
+
+.proyecto-card:hover .proyecto-overlay {
+  opacity: 1;
+}
+
+.proyecto-card:hover .proyecto-info {
+  transform: translateY(0);
+}
+
+/* --- MODO OSCURO --- */
+[data-theme="dark"] .proyectos-header h2 {
+  color: var(--primary);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .proyectos-section {
+    padding: 60px 1rem;
+  }
+  
+  .proyectos-grid {
+    grid-template-columns: 1fr; /* Una sola columna en móvil */
+  }
+
+  .proyecto-card {
+    height: 350px;
+  }
+  
+  .proyecto-overlay {
+    opacity: 1; /* En móviles el texto siempre visible es mejor UX */
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%);
+    padding: 20px;
+  }
+  
+  .proyecto-info {
+    transform: translateY(0);
+  }
+}

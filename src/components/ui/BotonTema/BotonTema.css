@@ -58,12 +58,12 @@
 
 @media (max-width: 768px) {
   .alternar-tema-switch {
-    width: 65px;
-    height: 34px;
+    width: 55px;
+    height: 24px;
   }
   .canica-switch {
-    width: 26px;
-    height: 26px;
+    width: 16px;
+    height: 16px;
   }
   
   .alternar-tema-switch.activado .canica-switch {
