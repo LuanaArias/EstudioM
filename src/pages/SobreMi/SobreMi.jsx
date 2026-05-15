@@ -1,5 +1,5 @@
 import './SobreMi.css';
-import img from '../../assets/proyectosDest/imagen1.jpg'
+import img from '../../assets/Galeria/Cocinaysala.png'
 
 export function SobreMi() {
   return (

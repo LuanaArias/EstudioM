@@ -20,7 +20,7 @@ export function Hero() {
                         <p>Diseñamos espacios que inspiran</p>
 
                         <div className="hero-buttons">
-                            <Link to="/galeria" className="btn outline">
+                            <Link to="/proyectos" className="btn outline">
                                 Explorar proyectos →
                             </Link>
 

@@ -18,7 +18,6 @@ export function Proyectos() {
                 <div className="proyecto-info">
                   <span className="proyecto-cat">{proyecto.categoria}</span>
                   <h3>{proyecto.titulo}</h3>
-                  <button className="btn-ver-mas">Ver detalles +</button>
                 </div>
               </div>
             </div>

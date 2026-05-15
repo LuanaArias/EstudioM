@@ -1,6 +1,6 @@
-import imagen1 from '../../../assets/proyectosDest/imagen1.jpg'
-import imagen2 from '../../../assets/proyectosDest/imagen2.jpg'
-import imagen3 from '../../../assets/proyectosDest/imagen3.jpg'
+import imagen1 from '../../../assets/Galeria/bañoVerde.png'
+import imagen2 from '../../../assets/Galeria/CocinaNordica.png'
+import imagen3 from '../../../assets/Galeria/FrentePisano.png'
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import './ProyectosDest.css'
@@ -14,27 +14,27 @@ export function ProyectosDest(){
                 <div className="proyecto-destacado">
                     <img src={imagen1} alt="Proyecto 1" />
                     <div className="overlay-destacados">
-                        <h3>Cocina Moderna</h3>
-                        <p>Diseño en madera y mármol</p>
+                        <h3>Baños</h3>
+                        <p>Toilette Ecléctico con Mural Paisajístico</p>
                     </div>
                 </div>
                 <div className="proyecto-destacado">
                     <img src={imagen2} alt="Proyecto 2" />
                     <div className="overlay-destacados">
-                        <h3>Living Minimalista</h3>
-                        <p>Espacios cálidos y funcionales</p>
+                        <h3>Cocina</h3>
+                        <p>Cocina Minimalista en Madera Clara y Contrastes</p>
                     </div>
                 </div>
 
                 <div className="proyecto-destacado">
                     <img src={imagen3} alt="Proyecto 3" />
                     <div className="overlay-destacados">
-                        <h3>Interior Contemporáneo</h3>
-                        <p>Luz natural y texturas</p>
+                        <h3>Locales Comerciales</h3>
+                        <p>Frente Comercial Pisano</p>
                     </div>
                 </div>
             </div>
-            <Link to="/galeria" className="btn primary-destacados">
+            <Link to="/proyectos" className="btn primary-destacados">
                 Ver todos mis proyectos <span>→</span>
             </Link>
         </section>
