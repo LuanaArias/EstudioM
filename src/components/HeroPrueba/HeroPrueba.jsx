@@ -1,12 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./HeroPrueba.css";
+import hero1 from "../../assets/Galeria/interior.png";
+import hero2 from "../../assets/Galeria/hero2.png";
+import hero3 from "../../assets/Galeria/hero3.png";
 
-const slides = [
-  "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
-  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-  "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
-];
+const slides = [hero1, hero2, hero3];
 
 export function HeroPrueba(){
     const [index, setIndex] = useState(0);
@@ -14,7 +13,7 @@ export function HeroPrueba(){
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % slides.length);
-    }, 5000); // cambia cada 5s
+    }, 4000); // cambia cada 4s
 
     return () => clearInterval(interval);
   }, []);
