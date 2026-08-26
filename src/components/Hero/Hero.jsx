@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import hero1 from "../../assets/Galeria/interiorNegro.png";
-import hero2 from "../../assets/Galeria/CocinaNegra.png";
-import hero3 from "../../assets/Galeria/BañoMinimalista.png";
+import hero1 from "../../assets/Galeria/hero2.png";
+import hero2 from "../../assets/Galeria/hero4.png";
+import hero4 from "../../assets/Galeria/BañoMinimalista.png";
 
 const images = [hero1, hero2, hero3];
 

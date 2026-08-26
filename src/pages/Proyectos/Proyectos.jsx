@@ -4,7 +4,7 @@ export function Proyectos() {
   return (
     <section className="proyectos-section">
       <div className="proyectos-header">
-        <span className="subtitle">Portafolio</span>
+        <span className="subtitle">Portfolio</span>
         <h2>Proyectos Seleccionados</h2>
         <p>Una mirada a nuestros trabajos más recientes</p>
       </div>
@@ -16,8 +16,7 @@ export function Proyectos() {
               <img src={proyecto.imagen} alt={proyecto.titulo} />
               <div className="proyecto-overlay">
                 <div className="proyecto-info">
-                  <span className="proyecto-cat">{proyecto.categoria}</span>
-                  <h3>{proyecto.titulo}</h3>
+                  <h3>{proyecto.categoria}</h3>
                 </div>
               </div>
             </div>

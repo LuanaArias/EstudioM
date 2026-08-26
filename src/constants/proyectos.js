@@ -10,29 +10,31 @@ import ComedorMarmol from '../assets/Galeria/Cocinaysala.png'
 import cocinaMarron from '../assets/Galeria/cocinaMarron.png'
 import bañoVerde from '../assets/Galeria/bañoVerde.png'
 import interiorNegro from '../assets/Galeria/interiorNegro.png'
+import comedor from '../assets/Galeria/comedor.png'
+import mesada from '../assets/Galeria/mesada.png'
+import armario from '../assets/Galeria/armario.png'
+import vanitory from '../assets/Galeria/vanitory.png'
+import escalera from '../assets/Galeria/escalera.png'
+
 
 export const proyectos = [
   {
     id: 1,
-    titulo: "Vestidor premium negro",
-    categoria: "Mobiliario a Medida",
+    categoria: "Mobiliario a medida",
     imagen: vestidor,
   },
   {
     id: 2,
-    titulo: "Baño minimalista natural",
     categoria: "Interiorismo",
     imagen: bañoMinimalista,
   },
   {
     id: 3,
-    titulo: "Cocina moderna y luminosa con detalles naturales",
     categoria: "Cocinas",
     imagen: cocinaNegra,
   },
   {
     id: 4,
-    titulo: "Mueble infantil con escalada",
     categoria: "Diseño Infantil",
     imagen: escalada,
   },
@@ -44,44 +46,62 @@ export const proyectos = [
   },
   {
     id: 6,
-    titulo: "Cocina Minimalista en Madera Clara y Contrastes",
     categoria: "Cocinas",
     imagen: cocinaNordica,
   },
   {
     id: 7,
-    titulo: "Placard Moderno a Medida",
-    categoria: "Mobiliario a Medida",
+    categoria: "Mobiliario a medida",
     imagen: PlacardNatural,
   },
   {
     id: 8,
-    titulo: "Vestidor en Madera Natural",
     categoria: "Vestidores",
     imagen: VestidorNatural,
   },
   {
     id: 9,
-    titulo: "Comedor Contemporáneo de Mármol y Cuero",
-    categoria: "Comedores",
+    categoria: "Comedor de autor",
     imagen: ComedorMarmol,
   },
   {
     id: 10,
-    titulo: "Despensa Integrada en Paraíso y Blanco Mate",
-    categoria: "Cocinas",
+    categoria: "Almacenamiento inteligente",
     imagen: cocinaMarron,
   },
   {
     id: 11,
-    titulo: "Interior estilo industrial-moderno",
     categoria: "Interiores",
     imagen: interiorNegro,
   },
   {
     id: 12,
-    titulo: "Toilette Ecléctico con Mural Paisajístico",
-    categoria: "Baños",
+    categoria: "Baño escenográfico",
     imagen: bañoVerde,
+  },
+  {
+    id: 13,
+    categoria: "Vanitory de baño",
+    imagen: vanitory,
+  },
+  {
+    id: 14,
+    categoria: "Placard",
+    imagen: armario,
+  },
+  {
+    id: 15,
+    categoria: "Panelado de comedor",
+    imagen: comedor,
+  },
+  {
+    id: 16,
+    categoria: "Cocinas",
+    imagen: mesada,
+  },
+  {
+    id: 17,
+    categoria: "Bajo escalera",
+    imagen: escalera,
   },
 ];

@@ -8,17 +8,13 @@ export function FormContacto() {
 
     const handleWhatsAppSend = (e) => {
         e.preventDefault();
-
-        // Tu número de teléfono con código de país 
-        const telefono = "5491100000000"; 
+ 
+        const telefono = "5491156000863"; 
     
-        // Armamos el texto con saltos de línea codificados (%0A)
         const mensajeWsp = `Hola Mónica! Mi nombre es *${nombre}* y me gustaría realizar el siguiente trabajo:%0A%0A${descripcion}`;
     
-        // Creamos la URL de WhatsApp
         const url = `https://wa.me/${telefono}?text=${mensajeWsp}`;
     
-        // Abrimos en una pestaña nueva
         window.open(url, '_blank');
     };
 

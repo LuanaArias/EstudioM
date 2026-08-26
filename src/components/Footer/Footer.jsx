@@ -42,12 +42,10 @@ export function Footer() {
           {/*  Contacto */}
           <div className="footer-contact">
             <h3>Contacto</h3>
-            <p>hola@estudiom.com</p>
+            <a href="https://wa.me/5491156000863?text=Hola%2C%20quiero%20hacer%20una%20consulta" target="_blank" className="whatsapp-link">
+              <p>+54 9 11 5600-0863</p>
+            </a>
             <p>Buenos Aires, Argentina</p>
-            <div className="social-links">
-              <a href="#">Instagram</a>
-              <a href="#">LinkedIn</a>
-            </div>
           </div>
         </div>
 
